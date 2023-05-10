@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <style>
+    #time {
+      font-family: 'Kanit', sans-serif;
+      font-weight: bold;
+      text-align: center;
+      font-size: 350px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="h1.png">
+  </div>
+<style>
+  #timetext {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 300px;
+  }
+</style>
+  <p id="time"></p>
+  <script>
+    function updateTime() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+      var timeString = hours + ':' + (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+      document.getElementById('time').innerHTML = timeString;
+    }
+    setInterval(updateTime, 1000);
+  </script>
+  <div>
+  <img src="CTA - Flowbase.co.png">
+  </div>
+  <div style="text-align: start;">
+    <img src="Group 1.png">
+  </div>
+  <div style="padding: 0 auto;">
+  <a href="https://www.facebook.com/watch/?v=3045035828869638">
+  <img src="Flowbase.co.png">
+  </a>
+  <div>
+    <img src="Group 2.png">
+  </div>
+</div>
+<footer>
+  <img src="FOOTER.png">
+</footer>
+</body>
+</html>
